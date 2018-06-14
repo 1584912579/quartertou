@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/d_ll"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/d_sim"
+            android:layout_width="80dp"
+            android:layout_margin="10dp"
+            fresco:roundAsCircle="true"
+            android:layout_height="80dp" />
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/d_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/d_title"
+                android:text="ssssss"
+                android:textColor="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/d_title"
+                android:id="@+id/d_tv"
+                android:textColor="#666"
+                android:text="ssssss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/jia"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/j"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/r"
+        android:id="@+id/d_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+

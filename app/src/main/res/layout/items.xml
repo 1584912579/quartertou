@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="280dp">
+    <RelativeLayout
+        android:id="@+id/s_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sim2"
+            android:layout_width="80dp"
+            android:layout_margin="10dp"
+            fresco:roundAsCircle="true"
+            android:layout_height="80dp" />
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/sim2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title"
+                android:text="ssssss"
+                android:textColor="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/title"
+                android:id="@+id/tv"
+                android:textColor="#666"
+                android:text="ssssss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/s_jia"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/j"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/sdsd"
+        android:layout_below="@id/s_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/video"
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/bf"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignTop="@id/sdsd"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="52dp"-->
+        <!--android:src="@drawable/timg" />-->
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="50dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_height="160dp">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/xin1"/>
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/wujiaoxing2"/>
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/fenxiang"/>
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/xiaoxi"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
